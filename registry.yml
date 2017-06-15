@@ -1,72 +1,15 @@
 server:
   port: 8761
 
-# eureka:
-#   instance:
-#     hostname: localhost
-#   client:
-#     serviceUrl:
-#       defaultZone: http://localhost:8761/eureka/
+ 
+logging:
+    file: C:\Users\amercado\logs\serviceUser\registryInfo.log
+    pattern:
+      console: "%d %-5level %logger : %msg%n"
+      file: "%d %-5level [%thread] %logger : %msg%n"
+    level:
+      com.att.ufix.registry: DEBUG
+      
 
-# ---
-# spring:
-#   profiles: qa
 
-# eureka:
-#   instance:
-#     prefer-ip-address: true
-#   client:
-#     serviceUrl:
-#       defaultZone: http://registry:8761/eureka/
-
-##
-## Configuration for multiple eureka instances (2 in this case)
-## Remember to add to hosts file the hostnames
-## 127.0.0.1       eureka-host1
-## 127.0.0.1       eureka-host2
-## You need to run the app whit both multiple-registry and registry-host(n) profiles
-## java -jar -Dspring.profiles.active=multiple-registry,registry-host1 app.jar
-##
----
-spring:
-  profiles: multiple-registry
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
----
-spring:
-  profiles: registry-host1
-
-server:
-  port: 8761
-
-eureka:
-  instance:
-    hostname: registry-host1
-  client:
-    serviceUrl:
-      defaultZone: http://registry-host2:8762/eureka/
-
----
-spring:
-  profiles: registry-host2
-
-server:
-  port: 8762
-
-eureka:
-  instance:
-    hostname: registry-host2
-  client:
-    serviceUrl:
-      defaultZone: http://registry-host1:8761/eureka/
-##
-## Ends configuration for multiple eureka instances
-##
+  
