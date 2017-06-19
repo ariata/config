@@ -1,0 +1,3 @@
+message.invalidRequest=Message Invalid request
+message.executionCreated=Message Workflow execution created
+message.notImplemented=Message Functionality not available
