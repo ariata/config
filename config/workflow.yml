@@ -1,0 +1,14 @@
+server:
+  port: 8002
+  context-path: /micro/${api.version}
+
+api:
+  version: 1.0
+ 
+logging:
+    file: C:\Users\amercado\logs\serviceUser\WorkFlowInfo.log
+    pattern:
+      console: "%d %-5level %logger : %msg%n"
+      file: "%d %-5level [%thread] %logger : %msg%n"
+    level:
+      com.att.ufix.registry: DEBUG
