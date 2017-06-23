@@ -34,7 +34,13 @@ service:
   #allow.guest: false
   workflow.channel:
   types.services.suppurted: TV, Internet, Mobility, cel
-  
+ 
+security:
+  basic:
+    enabled: true
+  user:
+    name: config
+    password: config1
 eureka:
   client:
     serviceUrl:
