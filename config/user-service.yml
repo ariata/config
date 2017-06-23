@@ -28,7 +28,7 @@ server:
   port: 8084
 
 service:
-  name: userServices Git 
+  name: userServices Git update
   time:
     session: 102
   #allow.guest: false
