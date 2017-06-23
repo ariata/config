@@ -33,7 +33,7 @@ server:
   port: 8084
 
 service:
-  name: userServices Git update 2
+  name: userServices Git update 3
   time:
     session: 102
   #allow.guest: false
