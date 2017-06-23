@@ -6,11 +6,9 @@ spring:
     url: jdbc:oracle:thin:@localhost:1521:xe
     username: system
     password: motive
-    # Keep the connection alive if idle for a long time (needed in production)
     testWhileIdle: true
     validationQuery: SELECT 1
   jpa:
-    # Show or not log for each sql query
     show-sql: false
     
 logging:
@@ -28,6 +26,14 @@ logging:
   
 server:
   port: 8084
+
+service:
+  name: userServices Git 
+  time:
+    session: 102
+  #allow.guest: false
+  workflow.channel:
+  types.services.suppurted: TV, Internet, Mobility, cel
   
 eureka:
   client:
