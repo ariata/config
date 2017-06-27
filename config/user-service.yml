@@ -3,7 +3,7 @@ security:
     enabled: true
   user:
     name: config
-    password: config1
+    password: {cipher}98a061af6707f7387c8b7e6d7889bc68175993c37dc1bb90a4596df320464056
 #
 
 spring:
