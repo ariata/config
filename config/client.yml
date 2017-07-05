@@ -4,8 +4,8 @@ service:
   name: clientServices
 spring:
   application:
-    name:client
+    name: client
   cloud:
     config:
-      username=config
-      password='{cipher}298d401523e29e911f936e4dba81289041c217e06c2cb572b18ca753560c22172'
+      username: config
+      password: '{cipher}298d401523e29e911f936e4dba81289041c217e06c2cb572b18ca753560c22172'
