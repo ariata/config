@@ -1,7 +1,7 @@
 server:
   port :8080
 service:
-  name: clientService
+  name: client
 spring:
   application:
     name: client
