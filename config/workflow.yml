@@ -1,3 +1,5 @@
+service:
+  name: workflow
 server:
   port: 8002
   context-path: /micro/${api.version}
