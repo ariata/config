@@ -5,4 +5,4 @@ service:
   time.session: 102
   #allow.guest: false
   workflow.channel:
-  types.services.suppurted: TV, Internet, Mobility
+  types.support: TV, Internet, Mobility
