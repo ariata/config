@@ -1,4 +1,4 @@
 server:
   port: 8282
 service:
-  name: client2
+  name: client3
