@@ -2,3 +2,7 @@ server:
   port: 8282
 service:
   name: client3
+  time.session: 102
+  #allow.guest: false
+  workflow.channel:
+  types.services.suppurted: TV, Internet, Mobility
